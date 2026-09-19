@@ -1,0 +1,31 @@
+now:
+  label: Now
+  hint: "in development · active focus"
+  items:
+    - project: hadisku
+      title: HadisKu v4 Beta 3
+      note: "Improving the new native experience with Hadis Cards, personal notes, better settings tabs, more list options, in-app updates, and in-app review improvements."
+
+    - project: kasircepat
+      title: KasirCepat Improvements
+      note: "Expanding core cashier features with cashier sessions, custom cashier name input, and discount system improvements."
+
+next:
+  label: Next
+  hint: "planned · upcoming focus"
+  items:
+    - project: muslim-launcher
+      title: Muslim Launcher Beta 1
+      note: "A privacy-focused Android launcher experience designed for Muslim daily life."
+
+    - project: tiketea
+      title: Tiketea Beta 2
+      note: "Continuing development with improvements and new features for the next beta release."
+
+later:
+  label: Later
+  hint: "future ideas · when ready"
+  items:
+    - project: flagodna
+      title: More privacy-first tools
+      note: "Exploring future software ideas within the FlagoDNA ecosystem."

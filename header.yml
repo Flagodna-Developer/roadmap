@@ -1,0 +1,15 @@
+site:
+  title: Flagodna Roadmap
+  kicker: flagodna / projects
+  intro: >-
+    What we're building across the Flagodna ecosystem, grouped by when it
+    ships: now, next, and later.
+
+nav:
+  brand:
+    label: FlagoDNA Roadmap
+    href: https://flagodna.com/roadmap
+    logo: https://cdn.flagodna.com/favicon/flagodna/favicon-96x96.png
+  links:
+    - label: Home
+      href: https://flagodna.com
