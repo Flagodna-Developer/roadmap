@@ -1,8 +1,5 @@
 # Dependencies
-node_modules/
-
-# Build outputs
-dist/
+node_modules/ 
 
 # Logs
 npm-debug.log*
