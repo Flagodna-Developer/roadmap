@@ -123,6 +123,57 @@ function renderColumn(key, column) {
 function stamp() {
   return new Date().toISOString().slice(0, 10);
 }
+function generateJsonLd() {
+  const items = [];
+
+  let position = 1;
+
+  for (const [lane, column] of Object.entries(ROADMAP)) {
+    for (const item of column.items || []) {
+      items.push({
+        "@type": "ListItem",
+        position: position++,
+        item: {
+          "@type": "Thing",
+          name: item.title,
+          description: item.note || "",
+          additionalProperty: {
+            "@type": "PropertyValue",
+            name: "Status",
+            value: column.label || lane,
+          },
+        },
+      });
+    }
+  }
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://flagodna.com/roadmap/#webpage",
+    url: "https://flagodna.com/roadmap/",
+    name: SITE.title,
+    description: SITE.intro,
+    isPartOf: {
+      "@id": "https://flagodna.com/#website",
+    },
+    about: {
+      "@id": "https://flagodna.com/#organization",
+    },
+    publisher: {
+      "@id": "https://flagodna.com/#organization",
+    },
+    inLanguage: "en",
+    mainEntity: {
+      "@type": "ItemList",
+      "@id": "https://flagodna.com/roadmap/#roadmap",
+      name: "FlagoDNA Development Roadmap",
+      itemListElement: items,
+    },
+  };
+
+  return JSON.stringify(jsonLd, null, 2);
+}
 
 function generate() {
   const template = fs.readFileSync(path.join(ROOT, "template.html"), "utf8");
@@ -134,6 +185,7 @@ function generate() {
 
   const html = template
     .replaceAll("{{TITLE}}", escapeHtml(SITE.title))
+    .replaceAll("{{JSONLD}}", generateJsonLd())
     .replaceAll("{{KICKER}}", escapeHtml(SITE.kicker || ""))
     .replaceAll("{{INTRO}}", escapeHtml(SITE.intro))
     .replaceAll("{{TOPBAR}}", renderTopbar(NAV))
@@ -141,9 +193,9 @@ function generate() {
     .replaceAll("{{STAMP}}", stamp())
     .replaceAll("{{COLUMNS}}", columns);
 
-  fs.mkdirSync(DIST, { recursive: true });
-  fs.writeFileSync(path.join(DIST, "index.html"), html);
-  console.log("wrote dist/index.html");
+  // Write directly to root
+  fs.writeFileSync(path.join(ROOT, "index.html"), html);
+  console.log("wrote index.html");
 }
 
 generate();
