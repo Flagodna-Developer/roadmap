@@ -1,0 +1,23 @@
+{
+  "name": "cf-roadmap-flagodna",
+  "version": "1.0.0",
+  "description": "Public roadmap for FlagoDNA projects.",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cas8398/roadmap-flagodna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cas8398/roadmap-flagodna/issues"
+  },
+  "homepage": "https://github.com/cas8398/roadmap-flagodna#readme",
+  "dependencies": {
+    "js-yaml": "^5.4.2"
+  }
+}
