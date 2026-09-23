@@ -1,26 +1,26 @@
 now:
   label: Now
-  hint: "in development · active focus"
+  hint: "active focus · release & development"
   items:
+    - project: brosurmta
+      title: Brosur MTA Maintenance
+      note: "Fixing PDF loading issues and reviewing crash reports before the next release."
+
     - project: hadisku
       title: HadisKu v4 Beta 3
       note: "Improving the new native experience with Hadis Cards, personal notes, better settings tabs, more list options, in-app updates, and in-app review improvements."
-
-    - project: kasircepat
-      title: KasirCepat Improvements
-      note: "Expanding core cashier features with cashier sessions, custom cashier name input, and discount system improvements."
 
 next:
   label: Next
   hint: "planned · upcoming focus"
   items:
+    - project: tiketea
+      title: Tiketea Beta 2
+      note: "Building the dedicated experience with a Next.js frontend and Go API."
+
     - project: muslim-launcher
       title: Muslim Launcher Beta 1
       note: "A privacy-focused Android launcher experience designed for Muslim daily life."
-
-    - project: tiketea
-      title: Tiketea Beta 2
-      note: "Continuing development with improvements and new features for the next beta release."
 
 later:
   label: Later
