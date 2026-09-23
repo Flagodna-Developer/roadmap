@@ -1,5 +1,24 @@
 # Changelogs FlagoDNA
 
+## 2026-09-23
+
+### Brosur MTA v4.0.1
+
+#### Removed
+
+- Removed **OneSignal SDK** for push notifications.
+
+#### Added
+
+- Added direct integration with **Firebase Cloud Messaging (FCM)** for notifications. 
+- Added **Tiketea Saran form** for questions, suggestions, and user feedback.
+
+#### Fixed
+
+- Improved **PDF Reader error handling** by replacing raw system errors with more user-friendly messages.
+
+---
+
 ## 2026-09-22
 
 ### KasirCepat v26.9.22
