@@ -1,10 +1,18 @@
 now:
   label: Now
   hint: "active focus · release & development"
-  items: 
+  items:
     - project: hadisku
-      title: HadisKu v4 Beta 3
-      note: "Improving the new native experience with Hadis Cards, personal notes, better settings tabs, more list options, in-app updates, and in-app review improvements."
+      title: HadisKu v4 Beta 4
+      note: "Building the Hadith Card Generator for creating shareable hadith image cards."
+
+    - project: hadisku-web
+      title: HadisKu Web Hadith Reader
+      note: "Building dedicated web routes for reading individual hadith, such as /h/bukhari/1."
+
+    - project: lens-browser
+      title: Lens Browser Update
+      note: "Adding automatic flushing of cache, cookies, and local storage."
 
 next:
   label: Next
