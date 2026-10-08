@@ -1,5 +1,85 @@
 # Changelogs FlagoDNA
 
+---
+
+## 2026-10-08
+
+### MTA ONE v4.0.6
+
+#### Fixed
+
+* Fixed online radio playback issues.
+* Improved PDF reader zoom functionality.
+
+### HadisKu.id
+
+#### Changed
+
+* Updated the HadisKu.id landing page.
+* Made minor UI and presentation improvements.
+
+---
+
+## 2026-10-07
+
+### HadisKu Web
+
+#### Added
+
+* Added web-based hadith reading routes for individual hadith.
+* Added support for displaying the full collection of approximately **74,000 hadith** directly through HadisKu.id.
+* Added route structure for reading hadith by imam and hadith number:
+
+  `/h/(imam)/(number)`
+
+  Example:
+
+  `/h/bukhari/1`
+
+#### Changed
+
+* Improved the web reading experience for accessing individual hadith directly.
+
+---
+
+## 2026-10-06
+
+### Quran Today Web
+
+#### Changed
+
+* Updated the Quran Today web interface.
+* Made minor UI improvements.
+* Improved the Quran web reader for a better reading experience.
+
+#### Fixed
+
+* Fixed several issues affecting the Quran web reading experience.
+
+---
+
+## 2026-10-05
+
+### Lens Browser
+
+#### Added
+
+* Added an **Auto-Clear Browsing Data** option.
+
+* Added automatic clearing of:
+
+  * Cookies
+  * Local Storage
+  * Session Storage
+
+* Browsing data is automatically flushed when entering, searching, or refreshing a page while the option is enabled.
+
+#### Changed
+
+* Made automatic data clearing optional to avoid interfering with websites that require persistent browser storage, including some CAPTCHA flows.
+
+---  
+
 ## 2026-10-04
 
 ### HadisKu.id & HadisKu Dashboard
