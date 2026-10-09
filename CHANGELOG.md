@@ -2,6 +2,38 @@
 
 ---
 
+## 2026-10-10
+
+### MTA ONE v4.0.7
+
+#### Fixed
+
+* Fixed online radio playback issues.
+
+---
+
+## 2026-10-09
+
+### Quran Today v2.0.3
+
+#### Fixed
+
+* Fixed translations for Surah Al-Mu’minun verses 78–80.
+* Improved surah card interactions.
+* Fixed scrolling behavior to center the last verse when tapped.
+
+#### Changed
+
+* Updated the application logo.
+* Removed the hover effect when long-pressing surah cards.
+
+#### Added
+
+* Added a table of contents to the Settings screen.
+* Added horizontal verse navigation chips to the Quran reader.
+
+---
+
 ## 2026-10-08
 
 ### MTA ONE v4.0.6
@@ -19,6 +51,7 @@
 * Made minor UI and presentation improvements.
 
 ---
+
 
 ## 2026-10-07
 
