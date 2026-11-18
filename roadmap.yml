@@ -1,10 +1,10 @@
 now:
   label: Now
-  hint: "active focus · release & development"
+  hint: "active focus · development"
   items:
-    - project: hadisku
-      title: HadisKu v4 Beta 4
-      note: "Building the Hadith Card Generator for creating shareable hadith image cards."  
+    - project: muslim-launcher
+      title: Muslim Launcher Beta 1
+      note: "Building a privacy-focused Android launcher designed to bring Muslim daily life into a more intentional digital environment."
 
 next:
   label: Next
@@ -12,11 +12,7 @@ next:
   items:
     - project: tiketea
       title: Tiketea Beta 2
-      note: "Building the dedicated experience with a Next.js frontend and Go API."
-
-    - project: muslim-launcher
-      title: Muslim Launcher Beta 1
-      note: "A privacy-focused Android launcher experience designed for Muslim daily life."
+      note: "Building the dedicated ticketing experience with a Next.js frontend and Go API."
 
 later:
   label: Later
